@@ -13,3 +13,22 @@
 3. 이슈컨텐츠는 고정으로 상단에 있으며 매 7초마다 변경
 4. 앱 실행시 index화면에 ai가 물어보는 오늘의 기분은 어떠신가요가 있음
 5. ai가 오늘의 기분 전체 통계를 보고 오늘의 유저들의(익명 포함) 평균 감정을 알려주는 기능이있음
+
+
+회원 user  
+userID int primary key, auto_increment (고유 아이디)
+passWord varchar(20) (비밀번호)
+passWord_OK  varchar(20) (비밀번호 확인)
+email varchar(30) (이메일)
+premium Boolean (프리미엄 여부)
+
+게시물 post
+id int primary key, auto_increment (게시물의 고유 번호)
+contents  varchar(300) (글 내용)
+image_url varchar(200) (이미지 및 동영상)
+created_at  datetime (작성 시간)
+exprires_at datetime (삭제 예정 시간)
+
+기업 광고 advertising
+id int primary key, auto_increment (광고 고유 번호)
+image_url varchar(200) (이미지 및 동영상)
